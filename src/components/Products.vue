@@ -1,12 +1,12 @@
 <template>
     <div class="products">
-        {{ msg }}
+        {{ this.msg }}
     </div>
 </template>
 
 <script>
     export default {
-        name: 'Products',
+        name: 'Furniture',
         data() {
             return {
                 msg: 'Products go here'
