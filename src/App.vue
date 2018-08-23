@@ -60,6 +60,10 @@ export default {
   color: #2c3e50
   nav.navbar 
     background-color: #fff
+    position: fixed
+    top: 0
+    z-index: 1
+    width: 100%
     div.container
       padding: 20px
       max-width: 1200px
