@@ -23,12 +23,12 @@
             <router-link class="navbar-item"  to="/products">Furniture</router-link>
             <router-link class="navbar-item"  to="/contact">Contact</router-link>
             <router-link class="navbar-item"  to="/faq">FAQ/Preguntas</router-link>
-            <router-link class="navbar-item" to="apply">
+            <a class="navbar-item" target="_blank" href="https://www.progressivelp.com/onlineapplication/OnlineApplication.aspx?kid=1&sid=Abbey7045211288">
               <button class="button is-primary is-outlined">
                 <i class="fa fa-check-circle-o" aria-hidden="true"></i>
                 Credit Apply
               </button>
-            </router-link>
+            </a>
 
           </div>
         </div>
