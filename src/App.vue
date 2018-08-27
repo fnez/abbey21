@@ -20,7 +20,7 @@
         <div class="navbar-menu">
           <div class="navbar-end">
             <router-link class="navbar-item" to="/">Home</router-link>
-            <router-link class="navbar-item"  to="/products">Furniture</router-link>
+            <router-link class="navbar-item"  to="/furniture">Furniture</router-link>
             <router-link class="navbar-item"  to="/contact">Contact</router-link>
             <router-link class="navbar-item"  to="/faq">FAQ/Preguntas</router-link>
             <a class="navbar-item" target="_blank" href="https://www.progressivelp.com/onlineapplication/OnlineApplication.aspx?kid=1&sid=Abbey7045211288">

@@ -1,6 +1,6 @@
 <template>
   <div class="faq">
-    Faq
+    <h1>{{ this.title }}</h1>
   </div>
 </template>
 
@@ -9,7 +9,8 @@ export default {
   name: 'Faq',
   data () {
     return {
-      msg: 'Hello world'
+      title: 'FAQ',
+      subTitle: 'Frequently Asked Questions',
     }
   }
 }
@@ -17,5 +18,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="sass">
+  @import '../mainStyles'
   @import '../responsive'
 </style>
