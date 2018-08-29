@@ -28,7 +28,8 @@
 export default {
   name: 'Home',
   data () {
-    return {
+    return {      
+
       mainImg: 'https://picsum.photos/1200/800',
       // mainImg: '../assets/images/livingroom_main.jpg',
       intro: [
