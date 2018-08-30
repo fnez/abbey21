@@ -20,9 +20,9 @@ export default new Router({
       component: Faq
     },
     {
-      path: '/products',
-      name: 'Products',
-      component: Contact
+      path: '/furniture',
+      name: 'Furniture',
+      component: Furniture
     },
     {
       path: '/contact',
