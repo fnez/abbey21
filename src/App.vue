@@ -1,8 +1,6 @@
-
-
 <template>
   <div id="app">
-    <nav class="navbar bd-special-shadow" role="navigation">
+    <nav class="navbar has-shadow" role="navigation">
       <div class="container">
         <div class="navbar-brand">
           <a href="/" class="navbar-item">
@@ -10,7 +8,7 @@
             <h1 class="logo-title">Abbey 21st Furniture</h1>
           </a>
 
-          <button class="button navbar-burger">
+          <button class="button navbar-burger" @click="navToggle">
             <span></span>
             <span></span>
             <span></span>
@@ -45,6 +43,22 @@
 
 export default {
   name: 'App',
+  methods: {
+    navToggle() {
+      const navbarBurger = document.getElementsByClassName('navbar-burger')[0];
+      const navbarMenu = document.getElementsByClassName('navbar-menu')[0];
+
+
+      if( !(navbarMenu.classList.contains('is-active')) ) {
+        navbarMenu.classList.add('is-active');
+        navbarBurger.classList.add('is-active');
+      } else {
+        navbarMenu.classList.remove('is-active');
+        navbarBurger.classList.remove('is-active');
+      }      
+      
+    }
+  }
 }
 </script>
 
@@ -87,4 +101,7 @@ export default {
               color: $primary
             .button i 
               margin: 0 6px
+        &.is-active
+          // height: 100vh
+          // width: 100vw
 </style>
