@@ -15,7 +15,7 @@
     <div class="content-container gray-bg">
       <div class="inner-container column">
           <div v-for="item in sections">
-            <img :src="item.image" :alt="item.alt">
+            <img :src="getImgUrl(item.image)" :alt="item.alt">
             <h2>{{ item.title }}</h2>
             <p>{{ item.content }}</p>
         </div>
@@ -43,24 +43,30 @@ export default {
       ],
       sections: [
         { 
-          image: '../assets/images/bedroom/artesia_bedroom_set_02.png',
+          image: 'artesia_bedroom_set_02',
           alt: 'Living Room',
           title: 'Living Room',
           content: 'Dolor nunc vule putateulr ips dol consem donec semp ertet laciniate ultricie upien disse comete dolo lectus fgillaitollicil tua ludin dolor met quam accumsan ipsun. Dolore con dime netus lullam utlacusadipi scing ipsum molestie euismod lore estibulum vel'
         },
         { 
-          image: 'https://picsum.photos/1200/800',
+          image: 'barkley_bedroom_set_03',
           alt: 'Bedroom',
           title: 'Bedroom',
           content: 'Dolor nunc vule putateulr ips dol consem donec semp ertet laciniate ultricie upien disse comete dolo lectus fgillaitollicil tua ludin dolor met quam accumsan ipsun. Dolore con dime netus lullam utlacusadipi scing ipsum molestie euismod lore estibulum vel'
         },
         { 
-          image: 'https://picsum.photos/1200/800',
+          image: 'barstow_bedroom_set_04',
           alt: 'Office',
           title: 'Office',
           content: 'Dolor nunc vule putateulr ips dol consem donec semp ertet laciniate ultricie upien disse comete dolo lectus fgillaitollicil tua ludin dolor met quam accumsan ipsun. Dolore con dime netus lullam utlacusadipi scing ipsum molestie euismod lore estibulum vel'
         },        
       ]
+    }
+  },
+  methods: {
+    getImgUrl(img) {
+      var images = require.context('../assets/images/bedroom/', false, /\.png$/)
+      return images('./' + img + ".png")
     }
   }
 }
