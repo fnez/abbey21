@@ -14,13 +14,18 @@
 
     <div class="content-container gray-bg">
       <div class="inner-container column">
-          <div v-for="item in sections">
-            <img :src="getImgUrl(item.image)" :alt="item.alt">
-            <h2>{{ item.title }}</h2>
-            <p>{{ item.content }}</p>
+          <div v-for="item in sections" class="card">
+            <figure class="car-image">
+              <img :src="getImgUrl(item.image)" :alt="item.alt">
+            </figure>
+            <div class="card-content">
+              <h2 class="title is-5">{{ item.title }}</h2>
+              <p>{{ item.content }}</p>            
+            </div>
         </div>
       </div>
     </div>
+    
 
   </div>
 </template>
