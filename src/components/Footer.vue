@@ -1,22 +1,25 @@
 <template>
-    <div class="contact">
-        <h1>{{ this.title }}</h1>
+    <div class="footer">
+        <p>&#169; Copyright Abbey21st Furniture</p>
     </div>
 </template>
 
 <script>
     export default {
-        name: 'Contact',
+        name: 'FooterComponent',
         components: {},
         data() {
             return {
-                title: 'Contact'
+                title: 'Footer'
             }
         }
     }
 </script>
 
 <style scoped lang="sass">
-    @import '../mainStyles'
+    @import '../_mainStyles'
     @import '../responsive'
+    .footer
+        h1, h2, p 
+            color: initial
 </style>
