@@ -27,8 +27,6 @@
         </div>
       </div>
     </div>
-    
-
   </div>
 </template>
 
@@ -64,13 +62,6 @@ export default {
           content: 'Dolor nunc vule putateulr ips dol consem donec semp ertet laciniate ultricie upien disse comete dolo lectus fgillaitollicil tua ludin dolor met quam accumsan ipsun. Dolore con dime netus lullam utlacusadipi scing ipsum molestie euismod lore estibulum vel'
         },        
       ]
-    }
-  },
-  methods: {
-    getImgUrl(img, dir) {
-      let images = require.context('../assets/images/bedroom', false, /\.png$/)
-      console.log();
-      return images('./' + img + ".png")
     }
   }
 }
